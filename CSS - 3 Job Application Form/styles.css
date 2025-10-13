@@ -1,0 +1,59 @@
+input:focus {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+input:invalid {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+input:valid {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+input {
+    padding: 600px;
+}
+
+textarea:focus {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+textarea:invalid {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+textarea:valid {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+
+
+select:invalid {
+    border-color: cornflowerblue;
+    background-color: cornsilk;
+}
+select:valid {
+    border-color: rgb(255, 0, 217);
+    background-color: cornsilk;
+    
+}
+
+
+button {
+    background-color: cornflowerblue;
+    border-color: blue;
+}
+button:hover {
+    background-color:blue;
+}
+
+.radio-group {
+    border-color:cornflowerblue;
+    background-color: cornsilk;
+    box-shadow: 0px 0px;
+    
+}
+
+.radio-group:checked label{
+    color: pink;
+}

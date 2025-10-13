@@ -1,0 +1,20 @@
+
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100vw
+    
+}
+
+section {
+    display: inline-block;
+    width: 30%;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}

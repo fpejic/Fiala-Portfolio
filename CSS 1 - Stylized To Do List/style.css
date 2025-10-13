@@ -1,0 +1,14 @@
+a:link {
+    color: fuchsia;
+    
+}
+a:hover {
+    color: pink;
+}
+a:focus {
+    outline: 2px;
+    outline-color: blue;
+}
+a:visited {
+    color: aqua;
+}
