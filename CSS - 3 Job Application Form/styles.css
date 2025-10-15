@@ -11,7 +11,7 @@ input:valid {
     background-color: cornsilk;
 }
 input {
-    padding: 600px;
+    padding: 0px;
 }
 
 textarea:focus {
