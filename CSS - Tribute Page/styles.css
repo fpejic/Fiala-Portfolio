@@ -1,0 +1,40 @@
+#image {
+  width: 100vw;
+}
+h1{
+    font-size:5em;
+     margin-bottom:-0.29em;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color:rgb(123, 182, 237);
+    margin-bottom: 5em;
+}
+*{
+    margin:0;
+}
+p{
+    color:rgb(251, 228, 198);
+    margin: 1em;
+    background-color: rgb(108, 145, 172);
+}
+#img-caption{
+    color:rgb(179, 150, 112);
+    margin-left: 4em;
+    margin-top: -6px;
+
+}
+a{
+    color:rgb(179, 150, 112);
+}
+#link-text{
+    background-color: rgb(55, 55, 55);
+    margin:0;
+    text-align: center;
+    padding:0.5em;
+}
+#img-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}

@@ -1,3 +1,61 @@
-/* .welcome {
-    background color
-} */
+*{
+    margin:0;
+}
+
+#welcome {
+    background-color: rgb(255, 193, 231);
+    min-height: 100vh;
+    padding: 1em;
+} 
+#projects {
+    background-color: aquamarine;
+    min-height:100vh;
+    padding-top:20px;
+    padding:1em
+}
+#navbar {
+    background-color: rgb(255, 217, 127);
+    position: sticky;
+    top: 0px;
+}
+.project_img{
+    width:200px;
+    margin:0px;
+    border-radius: 10px;
+}
+.projectLinks {
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.frame{
+    width:200px;
+    height:130px;
+    background-color:rgb(255, 255, 255);
+    margin:5px;
+    border-radius:10px;
+}
+
+ .nav {
+   position: sticky;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    z-index: 100;
+        }
+.btn {
+    position: sticky;
+    top: 0px;
+     color: white;
+    background-color: #c0cc38;
+    height: em;
+    width: 25vw;
+    padding: 2px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 3px;
+    text-align: center; 
+    border-radius: 5px;    
+}  

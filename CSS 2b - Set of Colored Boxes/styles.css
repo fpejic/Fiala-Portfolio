@@ -2,9 +2,9 @@ body {
     background-color: #f4f4f4;
 }
 .color-box {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
+    width: 9vh;
+    height:9vh;
+    margin: 4px;
 }
 .color1 {
     background-color: #e9967a;
@@ -20,4 +20,9 @@ body {
 }
 .color5{
     background-color: #987ae9;
+}
+.color-grid{
+    display:flex;
+    flex-wrap:wrap;
+    
 }
