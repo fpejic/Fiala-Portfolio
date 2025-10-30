@@ -1,0 +1,49 @@
+html, body{
+    background-color: #ffbf00;
+    color: #e0f7f1;
+    
+    height: 100vh;
+    width:100vw;
+}
+@media screen and (max-width: 600px){
+  #logo {
+    height:20vh;
+  }
+}
+
+#logo{
+    flex: 1 1 auto;
+    max-height: 40vh;
+}
+
+#splash{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    color: #fff2e6;
+    height: 100vh;
+    width:100%;
+    color:#004d00;
+    font-family: "ubuntu";
+    
+}
+#splash_heading{
+    font-family: "Badeen Display";
+    color:#004d00;
+    font-size: 4em;
+    margin-top: 0px;
+}
+.CTA_button{
+    background-color: #ffe6b3;
+    padding: 1em;
+    color:#004d00;
+}
+.CTA_button:hover {
+    background-color:#66b3a1;
+    color:#004d00;
+}
+
+#reviews{
+    background-color:#004d00
+}
