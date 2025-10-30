@@ -1,15 +1,11 @@
 html, body{
     background-color: #ffbf00;
     color: #e0f7f1;
-    
+    margin-left:0;
     height: 100vh;
     width:100vw;
 }
-@media screen and (max-width: 600px){
-  #logo {
-    height:20vh;
-  }
-}
+
 
 #logo{
     flex: 1 1 auto;
@@ -33,6 +29,16 @@ html, body{
     color:#004d00;
     font-size: 4em;
     margin-top: 0px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+@media screen and (max-width: 600px){
+  #logo {
+    height:20vh;
+  }
+  #splash_heading{
+    font-size: 3em;
+}
 }
 .CTA_button{
     background-color: #ffe6b3;

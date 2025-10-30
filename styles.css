@@ -1,41 +1,64 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:hover{
+  opacity:100%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow-x: hidden;
+}
 #welcome {
-    /* background-color: rgb(193, 234, 255); */
-    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    min-height: 90vh;
     padding: 1em;
+    text-align:center;
 } 
 #projects {
-    background-color: rgb(45, 110, 194);
+    background-color: rgb(0, 0, 0);
     min-height:50vh;
     padding-top:20px;
     padding:1em
 }
 #navbar {
-    background-color: rgb(255, 217, 127);
     position: sticky;
+    opacity: 0%;
+    background-color: rgb(27, 27, 27);
     top: 0px;
 }
+#navbar:hover{
+    opacity:100%;
+}
 #aboutme{
-    background-color: rgb(45, 29, 167);
-    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 20px;
     min-height: 50vh;
 }
-.project_img{
-    width:200px;
-    margin:0px;
-    border-radius: 10px;
+#aboutme:hover{
+    color:white;
+    
 }
 .projectLinks {
     display: flex;
+    flex-direction:row;
     flex-wrap:wrap;
-
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-.frame{
-    width:200px;
-    height:130px;
-    background-color:rgb(255, 255, 255);
+.project_img{
+    max-width: 300px;
     margin:5px;
-    border-radius:10px;
+    border-radius: 10px;
+    opacity:0;
+    background-color:rgb(0, 0, 0);
+}
+.project_img:hover{
+    opacity:100%;
 }
 
  .nav {
@@ -50,8 +73,8 @@
 .btn {
     position: sticky;
     top: 0px;
-     color: white;
-    background-color: #c0cc38;
+    color: rgb(255, 255, 255);
+    background-color: none;
     height: em;
     width: 25vw;
     padding: 2px;
@@ -61,35 +84,44 @@
     text-align: center; 
     border-radius: 5px;    
 }  
+.btn:hover{
+    color: white;
+    background-color: #2c2c2c;
+}
+#welcome_div:hover{
+    color:white;
+}
 
 
+/* chatgpt - fish */
 
 /* Background container */
-/* .fish-background {
+.fish-background {
   position: absolute;
-  top: 0;
+  top: 20vh;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   overflow: hidden;
-  background-color: rgb(193, 234, 255);;
-  z-index: -1;
-} */
-
-
+  background-color: rgb(0, 0, 0);;
+}
 
 /* Shared fish styles */
-/* .fish {
+.fish {
   position: absolute;
   width: 80px;
   height: 50px;
-  background: orange;
+  background: rgb(0, 0, 0);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   opacity: 0.8;
-} */
+}
+
+.fish:hover {
+  background: rgb(255, 255, 255);
+}
 
 /* Fish tail using ::before */
-/* .fish::before {
+.fish::before {
   content: "";
   position: absolute;
   right: 80px;
@@ -98,52 +130,60 @@
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid orange;
-} */
+  border-left: 15px solid rgb(0, 0, 0);
+}
 
+.fish:hover::before {
+  border-left-color: rgb(255, 255, 255);
+}
 /* Swimming animations */
-/* @keyframes swim-right {
-  0% {
-    transform: translateX(-10vw) scaleX(1);
-  }
-  20% {
-    transform: translateX(10vw) scaleX(1);
-  }
-  30% {
-    transform: translateX(30vw) scaleX(1);
-  }
-  45%{
-    ransform: translateX(70vw) scaleX(1);
-  }
-  49% {
-    transform: translateX(100vw) scaleX(1);
-  }
-  50% {
-    transform: translateX(110vw) scaleX(-1);
-  }
-  80% {
-    transform: translateX(20vw) scaleX(-1);
-  }
-  99% {
-    transform: translateX(-10vw) scaleX(-1);
-  }
-  100% {
-    transform: translateX(-10vw) scaleX(1);
-  }
-} */
+@keyframes swim-right {
+  0% { transform: translateX(-10vw) scaleX(1); }
+  20% { transform: translateX(10vw) scaleX(1); }
+  30% { transform: translateX(30vw) scaleX(1); }
+  45% { transform: translateX(70vw) scaleX(1); }
+  49% { transform: translateX(100vw) scaleX(1); }
+  50% { transform: translateX(110vw) scaleX(-1); }
+  80% { transform: translateX(20vw) scaleX(-1); }
+  99% { transform: translateX(-10vw) scaleX(-1); }
+  100% { transform: translateX(-10vw) scaleX(1); }
+}
 
 /* Individual fish positions and speeds */
-/* .fish1 {
-  top: 20%;
-  animation: swim-right 35s linear infinite ;
+.fish1 {
+  top: 10%;
+  animation: swim-right 15s linear infinite ;
 }
 
 .fish2 {
-  top: 60%;
+  top: 20%;
   animation: swim-right 25s linear infinite 4s;
 }
 
 .fish3 {
-  top: 80%;
+  top: 40%;
   animation: swim-right 18s linear infinite 2s;
-} */
+}
+
+.fish4 {
+  top: 80%;
+  animation: swim-right 10s linear infinite ;
+}
+
+.fish5{
+    top: 90%;
+  animation: swim-right 10s linear infinite -2s;
+}
+
+#nightVision_toggle{
+  
+    color:rgb(42, 42, 42);
+    background-color: rgb(0, 0, 0);
+    margin: 20px;
+    border-radius: 5px;
+    border:none;
+
+}
+#nightVision_toggle:hover{
+  background-color: rgb(26, 255, 0);
+}

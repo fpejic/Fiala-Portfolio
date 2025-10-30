@@ -1,14 +1,19 @@
+*{
+    background-color: blueviolet;
+}
 a:link {
-    color: fuchsia;
-    
+    color: rgb(191, 141, 249);
 }
 a:hover {
     color: pink;
 }
 a:focus {
     outline: 2px;
-    outline-color: blue;
+    outline-color: rgb(182, 119, 255);
 }
 a:visited {
     color: aqua;
+}
+ul{
+    list-style-type: none;
 }
